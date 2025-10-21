@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DesignLab — MOVA</title>
+  <link rel="icon" href="../MOVA LOGO.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 6%;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header img { height: 36px; }
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover { color: #b49c62; }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 { font-size: 32px; margin-bottom: 12px; color: #111; }
+    p { color: #444; }
+
+    .hero {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      margin-bottom: 30px;
+    }
+    .hero img { width: 100%; display: block; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 350px;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .link-btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: linear-gradient(135deg, gold, silver);
+      color: white;
+      padding: 12px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.3s;
+    }
+    .link-btn:hover { transform: translateY(-3px); }
+
+    .back {
+      display: inline-block;
+      margin-top: 18px;
+      color: #666;
+      text-decoration: none;
+    }
+    .back:hover { color: #b49c62; }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      border-top: 1px solid #eee;
+      color: #777;
+      margin-top: 60px;
+    }
+
+    @media(max-width:900px){
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../MOVA LOGO.png" alt="MOVA"></a>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="../index.html#proyectos">Proyectos</a>
+      <a href="../index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <img src="../img/project-designlab.jpg" alt="DesignLab">
+    </div>
+
+    <h1>DesignLab</h1>
+    <p>
+      <strong>DesignLab</strong> es el estudio creativo de MOVA, donde la innovación visual y el diseño estratégico se encuentran. 
+      Es un espacio dedicado a la experimentación, donde se crean conceptos de producto, experiencias digitales y sistemas de identidad visual con un enfoque funcional y moderno.
+    </p>
+
+    <p>
+      En DesignLab trabajamos con una visión multidisciplinar, uniendo diseño, psicología del usuario y tecnología. 
+      Nos enfocamos en entender cómo las personas interactúan con lo digital y cómo el diseño puede transmitir emociones, confianza y claridad.
+    </p>
+
+    <div class="grid">
+      <div>
+        <h3>Áreas de trabajo</h3>
+        <ul>
+          <li>Diseño de interfaces (UI) y experiencia de usuario (UX).</li>
+          <li>Creación de marcas y sistemas visuales coherentes.</li>
+          <li>Prototipado rápido y validación de productos digitales.</li>
+        </ul>
+
+        <h3>Filosofía</h3>
+        <p>
+          En MOVA DesignLab creemos que el diseño no solo debe verse bien, sino también sentirse bien. 
+          Cada elemento tiene un propósito: guiar, emocionar y mejorar la experiencia del usuario.
+        </p>
+
+        <a class="back" href="../index.html#proyectos">← Volver a Proyectos</a>
+      </div>
+
+      <aside class="card">
+        <h4>Ficha técnica</h4>
+        <p><strong>Área:</strong> Diseño e innovación</p>
+        <p><strong>Fundado:</strong> 2025</p>
+        <p><strong>Enfoque:</strong> Experiencia de usuario, branding, producto digital</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>© 2025 MOVA — Innovación con propósito.</footer>
+</body>
+</html>

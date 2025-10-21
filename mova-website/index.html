@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MOVA — Innovación y Tecnología</title>
+  <link rel="icon" href="MOVA LOGO.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      color: #111;
+      background-color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 6%;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #eee;
+      z-index: 1000;
+    }
+    header img { height: 36px; }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #b49c62; }
+
+    section { padding: 100px 6% 80px; }
+
+    .hero {
+      background: url('img/hero-visual.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: ""; position: absolute; top:0;left:0;right:0;bottom:0;
+      background: rgba(0,0,0,0.35);
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 48px;
+      font-weight: 600;
+      z-index: 2;
+    }
+    .hero p {
+      position: relative;
+      font-size: 18px;
+      z-index: 2;
+      max-width: 600px;
+    }
+    .hero button {
+      position: relative;
+      background: #b49c62;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 40px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 2;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .hero button:hover { background: #9e8b56; }
+
+    .fade-up { opacity: 0; transform: translateY(30px); transition: all 0.9s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    h2 { text-align: center; font-size: 28px; margin-bottom: 40px; }
+
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0,0,0,0.1); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card h3 { margin: 16px; font-size: 20px; }
+    .card p { margin: 0 16px 20px; color: #555; }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex; flex-direction: column;
+      gap: 14px;
+    }
+    input, textarea {
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-family: "Poppins", sans-serif;
+    }
+    button[type="submit"] {
+      background: #b49c62;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button[type="submit"]:hover { background: #9e8b56; }
+
+    footer {
+      padding: 40px 6%;
+      text-align: center;
+      background: #f8f8f8;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="MOVA LOGO.png" alt="MOVA Logo">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>MOVA</h1>
+    <p>Innovación, tecnología y diseño con propósito.</p>
+    <button onclick="document.getElementById('sobre').scrollIntoView({behavior:'smooth'})">Descubre MOVA</button>
+  </section>
+
+  <section id="sobre" class="fade-up">
+    <h2>Sobre MOVA</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:center;">
+      <img src="img/about-team.jpg" alt="Equipo MOVA" style="width:380px;border-radius:12px;">
+      <p style="max-width:500px;">MOVA combina creatividad y tecnología para impulsar proyectos sostenibles y digitales. Desde soluciones web hasta innovación ambiental, buscamos transformar ideas en impacto real con un enfoque moderno, eficiente y responsable.</p>
+    </div>
+  </section>
+
+  <section id="servicios" class="fade-up">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <a class="card" href="servicios/web.html">
+        <img src="img/service-web.jpg" alt="Diseño Web">
+        <h3>Creación de Páginas Web</h3>
+        <p>Webs limpias, rápidas y hechas a mano en HTML.</p>
+      </a>
+
+      <a class="card" href="servicios/brand.html">
+        <img src="img/service-brand.jpg" alt="Branding">
+        <h3>Branding y diseño visual</h3>
+        <p>Marcas modernas y coherentes con identidad visual sólida.</p>
+      </a>
+
+      <a class="card" href="servicios/green.html">
+        <img src="img/service-green.jpg" alt="Proyectos verdes">
+        <h3>Proyectos sostenibles</h3>
+        <p>Innovación y conciencia ambiental en cada desarrollo.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="proyectos" class="fade-up">
+    <h2>Proyectos</h2>
+    <div class="grid">
+      <a class="card" href="proyectos/optinova.html">
+        <img src="img/project-optinova.jpg" alt="OptiNova Labs">
+        <h3>OptiNova Labs</h3>
+        <p>Innovación tecnológica enfocada en sostenibilidad y ciencia aplicada.</p>
+      </a>
+
+      <a class="card" href="proyectos/designlab.html">
+        <img src="img/project-designlab.jpg" alt="DesignLab">
+        <h3>DesignLab</h3>
+        <p>Diseño digital y experiencias interactivas centradas en el usuario.</p>
+      </a>
+
+      <a class="card" href="proyectos/biogas.html">
+        <img src="img/project-biogas.jpg" alt="Biogás MOVA">
+        <h3>Proyecto Biogás</h3>
+        <p>Transformamos residuos orgánicos en energía y abono ecológico.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="contacto" class="fade-up">
+    <h2>Contáctanos</h2>
+    <form action="https://formspree.io/f/xdkwvlgw" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="4" placeholder="Tu mensaje..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>© 2025 MOVA — Innovación con propósito.</footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){ entry.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

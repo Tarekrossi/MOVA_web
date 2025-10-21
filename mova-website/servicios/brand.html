@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Branding e Identidad Visual — MOVA</title>
+  <link rel="icon" href="../MOVA LOGO.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 6%;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header img { height: 36px; }
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover { color: #b49c62; }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 { font-size: 32px; margin-bottom: 12px; color: #111; }
+    p { color: #444; }
+
+    .hero {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      margin-bottom: 30px;
+    }
+    .hero img { width: 100%; display: block; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 350px;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .link-btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: linear-gradient(135deg, gold, silver);
+      color: white;
+      padding: 12px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.3s;
+    }
+    .link-btn:hover { transform: translateY(-3px); }
+
+    .back {
+      display: inline-block;
+      margin-top: 18px;
+      color: #666;
+      text-decoration: none;
+    }
+    .back:hover { color: #b49c62; }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      border-top: 1px solid #eee;
+      color: #777;
+      margin-top: 60px;
+    }
+
+    @media(max-width:900px){
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../MOVA LOGO.png" alt="MOVA"></a>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="../index.html#servicios">Servicios</a>
+      <a href="../index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <img src="../img/service-brand.jpg" alt="Branding MOVA">
+    </div>
+
+    <h1>Branding e Identidad Visual</h1>
+    <p>
+      <strong>Branding MOVA</strong> es el servicio donde damos forma a la esencia visual de las marcas. 
+      Trabajamos desde la emoción, la estética y la coherencia, creando identidades que comunican sin necesidad de palabras.
+    </p>
+
+    <p>
+      No solo diseñamos logotipos —diseñamos sensaciones. 
+      Cada color, forma y tipografía se elige para reflejar los valores de una marca moderna, sólida y atractiva. 
+      Nuestro enfoque busca lograr que cada identidad visual sea reconocible, atemporal y adaptable a cualquier formato.
+    </p>
+
+    <div class="grid">
+      <div>
+        <h3>Qué incluye</h3>
+        <ul>
+          <li>Diseño de logotipo y sistema visual completo.</li>
+          <li>Manual de marca: colores, tipografía y aplicaciones.</li>
+          <li>Diseño de presentaciones, packaging o redes sociales.</li>
+          <li>Asesoramiento creativo y desarrollo conceptual.</li>
+        </ul>
+
+        <h3>En qué creemos</h3>
+        <p>
+          En MOVA creemos que una marca es mucho más que su imagen: es una promesa. 
+          Por eso, cada proyecto se crea con el mismo nivel de detalle que aplicamos a nuestras propias ideas.
+        </p>
+
+        <a class="back" href="../index.html#servicios">← Volver a Servicios</a>
+      </div>
+
+      <aside class="card">
+        <h4>Ficha técnica</h4>
+        <p><strong>Área:</strong> Branding y diseño visual</p>
+        <p><strong>Fundado:</strong> 2025</p>
+        <p><strong>Inspiración:</strong> Minimalismo, lujo moderno, claridad visual</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>© 2025 MOVA — Innovación con propósito.</footer>
+</body>
+</html>

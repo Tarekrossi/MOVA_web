@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BioGas MOVA — MOVA</title>
+  <link rel="icon" href="../MOVA LOGO.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 6%;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header img { height: 36px; }
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover { color: #b49c62; }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 { font-size: 32px; margin-bottom: 12px; color: #111; }
+    p { color: #444; }
+
+    .hero {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      margin-bottom: 30px;
+    }
+    .hero img { width: 100%; display: block; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 350px;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .link-btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: linear-gradient(135deg, gold, silver);
+      color: white;
+      padding: 12px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.3s;
+    }
+    .link-btn:hover { transform: translateY(-3px); }
+
+    .back {
+      display: inline-block;
+      margin-top: 18px;
+      color: #666;
+      text-decoration: none;
+    }
+    .back:hover { color: #b49c62; }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      border-top: 1px solid #eee;
+      color: #777;
+      margin-top: 60px;
+    }
+
+    @media(max-width:900px){
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../MOVA LOGO.png" alt="MOVA"></a>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="../index.html#proyectos">Proyectos</a>
+      <a href="../index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <img src="../img/project-biogas.jpg" alt="BioGas MOVA">
+    </div>
+
+    <h1>BioGas MOVA</h1>
+    <p>
+      <strong>BioGas MOVA</strong> es una iniciativa de economía circular que transforma residuos orgánicos en energía y fertilizante natural. 
+      Nació con el objetivo de reducir el desperdicio, generar valor sostenible y aportar soluciones reales para el futuro del planeta.
+    </p>
+
+    <p>
+      A través de procesos biotecnológicos controlados, se aprovechan los residuos orgánicos para obtener biogás —una fuente de energía limpia— 
+      y un subproducto ecológico que puede utilizarse como abono natural. 
+      El proyecto busca cerrar el ciclo de los residuos, devolviendo a la tierra lo que viene de ella.
+    </p>
+
+    <div class="grid">
+      <div>
+        <h3>Objetivos principales</h3>
+        <ul>
+          <li>Reducir la cantidad de residuos orgánicos no aprovechados.</li>
+          <li>Promover el uso de energías limpias y sostenibles.</li>
+          <li>Contribuir a una agricultura más verde mediante abonos naturales.</li>
+        </ul>
+
+        <h3>Impacto</h3>
+        <p>
+          Este proyecto no solo busca ser ecológicamente responsable, sino también socialmente útil. 
+          BioGas MOVA impulsa la innovación en sostenibilidad y fomenta la conciencia ambiental, 
+          inspirando a empresas y ciudadanos a adoptar prácticas más responsables.
+        </p>
+
+        <a class="back" href="../index.html#proyectos">← Volver a Proyectos</a>
+      </div>
+
+      <aside class="card">
+        <h4>Ficha técnica</h4>
+        <p><strong>Área:</strong> Energía renovable y sostenibilidad</p>
+        <p><strong>Fundado:</strong> 2025</p>
+        <p><strong>Ubicación:</strong> Molins de Rei</p>
+        <p><strong>Estado:</strong> En investigación y desarrollo</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>© 2025 MOVA — Innovación con propósito.</footer>
+</body>
+</html>
